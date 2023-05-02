@@ -4,5 +4,6 @@
  
  cleaner: https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/943495979/ - same speed, just nicer looking.
 
- further optimized: https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/943500818/ - I think this is about as good as I can do without giving myself a headache
+ further optimized: https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/943500818/ -runtime & mem both beat 99%
   - removed a branch in the findMedianSortedArrays loop
+  - I think this is about as good as I can do without giving myself a headache
