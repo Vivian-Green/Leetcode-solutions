@@ -6,17 +6,12 @@ int firstMissingPositive(int* nums, int numsSize){
     int clampToNumsSize;
 
     for(int i=0; i < numsSize; i++){
-        if(nums[i] < 1){
-            continue;
-        }
         numsMaxIsBigger = (numsMax > nums[i]) * numsMax;
         numsIIsBigger = (nums[i] >= numsMax) * nums[i];
         biggerOption = numsMaxIsBigger + numsIIsBigger;  
+        clampToNumsSize = ((numsSize+1) < biggerOption) * numsSize;
+        biggerOption = ((numsSize+1) >= biggerOption) * biggerOption;
 
-        if(numsSize+1 < biggerOption){
-            numsMax = numsSize+1;
-            continue;
-        }
         numsMax = clampToNumsSize + biggerOption;
     }
 
