@@ -1,4 +1,4 @@
-const int Max32BitSignedInt = 2147483647;
+const int Max32BitSignedInt = pow(2, 31)-1;
 
 
 int getValToCompareAgainst(int index, int length, int* arrayFrom){
